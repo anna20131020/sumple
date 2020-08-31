@@ -19,13 +19,17 @@ body {
           justify-content: space-between;
 }
 
+#header .header .header-icon {
+  width: 48%;
+}
+
 #header .header .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: 47px;
+  width: 48%;
 }
 
 #header .header .header-nav li {
@@ -50,6 +54,12 @@ body {
 
 #header .header .header-nav li a:hover {
   color: #42b9d0;
+}
+
+.container {
+  max-width: 960px;
+  position: relative;
+  margin: 0 auto;
 }
 
 .top-image {
@@ -89,10 +99,14 @@ body {
           justify-content: center;
 }
 
+.top-wrapper ul li:first-child {
+  margin-left: 0;
+}
+
 .top-wrapper ul li {
-  margin: 0 20px 0 20px;
   list-style: none;
   width: 295px;
+  margin-left: 4%;
 }
 
 .top-wrapper ul li img {
@@ -143,33 +157,33 @@ body {
 }
 
 #footer {
-  height: 180px;
   width: 100%;
   background-color: #42bad0;
+  padding-top: 30px;
 }
 
 #footer .footer-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 35px 15% 0 15%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 #footer .footer-list-logo {
-  margin-right: 50px;
+  width: 30.666667%;
 }
 
 #footer .footer-list-address {
-  margin-left: -135px;
+  margin-left: 0;
+  width: 30.6666667%;
 }
 
 #footer .footer-list-address p {
   color: #ffff;
   font-size: 12px;
-  margin-bottom: 10px;
+  line-height: 20px;
 }
 
 #footer .footer-list a {
@@ -177,6 +191,7 @@ body {
   text-decoration: none;
   font-size: 11px;
   margin-right: 10px;
+  width: 30.666667%;
 }
 
 #footer .footer-list a img {
@@ -186,7 +201,7 @@ body {
 
 #footer .footer-copyright {
   text-align: center;
-  margin-top: 23px;
+  padding: 30px 0 25px 0;
 }
 
 #footer .footer-copyright p {
@@ -215,12 +230,12 @@ body {
   color: #ffff;
   font-size: 32px;
   font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .news-main-wrapper,
 .company-main-wrapper {
   width: 100%;
-  height: 702px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -233,9 +248,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 35px 0 70px 0;
+  padding: 35px 0 90px 0;
   max-width: 100%;
-  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -248,7 +262,7 @@ body {
 .company-main-wrapper .company-main-wrapper-container .news-main-wrapper-container-left,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-left {
   padding-right: 10px;
-  width: 75%;
+  width: 74%;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-left h3,
@@ -264,6 +278,7 @@ body {
   padding-bottom: 20px;
   border-bottom: 3px solid #42b9d0;
   font-weight: bold;
+  line-height: 25px;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-left ul,
@@ -335,7 +350,7 @@ body {
 .company-main-wrapper .company-main-wrapper-container .news-main-wrapper-container-left table tr,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-left table tr {
   height: 62px;
-  border-bottom: 1px solid #626262;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-left table tr th,
@@ -346,11 +361,10 @@ body {
 .company-main-wrapper .news-main-wrapper-container .company-main-wrapper-container-left table tr th,
 .company-main-wrapper .company-main-wrapper-container .news-main-wrapper-container-left table tr th,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-left table tr th {
-  font-weight: initial;
   color: #626262;
   font-size: 14px;
   text-align: left;
-  margin: 20px 0;
+  padding: 20px 20px 20px 0;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-left table tr td,
@@ -364,7 +378,7 @@ body {
   color: #626262;
   font-size: 14px;
   padding: 20px 0;
-  line-height: 25px;
+  line-height: 23px;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-right,
@@ -395,7 +409,7 @@ body {
 .company-main-wrapper .company-main-wrapper-container .news-main-wrapper-container-right .company-main-wrapper-container-right-contents,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-right .news-main-wrapper-container-right-contents,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-right .company-main-wrapper-container-right-contents {
-  margin-bottom: 40px;
+  margin-bottom: 23px;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-right .news-main-wrapper-container-right-contents p,
@@ -418,8 +432,9 @@ body {
   color: #42b9d0;
   background-color: #f3f9fc;
   text-align: left;
-  padding: 10px 15px;
+  padding: 15px;
   font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-right .news-main-wrapper-container-right-contents ul,
@@ -457,10 +472,9 @@ body {
 .company-main-wrapper .company-main-wrapper-container .news-main-wrapper-container-right .company-main-wrapper-container-right-contents ul li,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-right .news-main-wrapper-container-right-contents ul li,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-right .company-main-wrapper-container-right-contents ul li {
-  margin-bottom: 10px;
   list-style: none;
-  padding: 15px 10px 15px 10px;
-  border-bottom: 1px solid #626262;
+  padding: 15px 10px 10px 10px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-right .news-main-wrapper-container-right-contents ul li a,
@@ -480,8 +494,9 @@ body {
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-right .news-main-wrapper-container-right-contents ul li a,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-right .company-main-wrapper-container-right-contents ul li a {
   font-size: 15px;
-  color: #42b9d0;
+  color: #339fd1;
   text-decoration: none;
+  line-height: 1.6px;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-right .news-main-wrapper-container-right-contents ul li a img,
