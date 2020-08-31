@@ -5,43 +5,50 @@ body {
 
 #header {
   background-color: #e9f3f5;
+  padding: 16px 0 19px 0;
+}
+
+#header .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 960px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 68px;
+}
+
+#header .header .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 240px;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 47px;
 }
 
-#header .header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#header .header-nav li {
+#header .header .header-nav li {
   list-style: none;
+  margin-top: 5px;
+  height: 40px;
 }
 
-#header .header-nav li a {
+#header .header .header-nav li a {
   text-decoration: none;
   font-size: 14px;
-  color: #000;
+  color: #626262;
   padding-right: 10px;
+  font-weight: bold;
 }
 
-#header .header-nav li a img {
+#header .header .header-nav li a img {
   vertical-align: middle;
   padding-right: 10px;
+  margin-bottom: 3px;
 }
 
-#header .header-nav li a:hover {
+#header .header .header-nav li a:hover {
   color: #42b9d0;
 }
 
@@ -59,32 +66,38 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 .top-image-text img {
-  margin: 180px 210px 0 0;
+  margin: 180px 331px 0 0;
 }
 
 .top-wrapper {
   background-color: #ffff;
   width: 100%;
+  padding: 30px 0;
 }
 
 .top-wrapper ul {
-  margin: 30px 240px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .top-wrapper ul li {
-  margin-right: 41px;
+  margin: 0 20px 0 20px;
   list-style: none;
+  width: 295px;
 }
 
 .top-wrapper ul li img {
   height: 190px;
-  width: 300px;
+  max-width: 100%;
 }
 
 .top-wrapper ul li h5 {
@@ -96,6 +109,7 @@ body {
 .top-wrapper ul li p {
   font-size: 13px;
   color: #626262;
+  line-height: 20px;
 }
 
 .news-wrapper {
@@ -138,7 +152,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 35px 230px 0 230px;
+  padding: 35px 15% 0 15%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -221,7 +235,7 @@ body {
   display: flex;
   padding: 35px 0 70px 0;
   max-width: 100%;
-  max-width: 907px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -234,7 +248,7 @@ body {
 .company-main-wrapper .company-main-wrapper-container .news-main-wrapper-container-left,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-left {
   padding-right: 10px;
-  width: 70%;
+  width: 75%;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-left h3,
@@ -260,7 +274,7 @@ body {
 .company-main-wrapper .news-main-wrapper-container .company-main-wrapper-container-left ul,
 .company-main-wrapper .company-main-wrapper-container .news-main-wrapper-container-left ul,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-left ul {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-left ul li,
@@ -272,7 +286,7 @@ body {
 .company-main-wrapper .company-main-wrapper-container .news-main-wrapper-container-left ul li,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-left ul li {
   list-style: none;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-left ul li p,
@@ -298,6 +312,7 @@ body {
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-left ul li p span {
   color: #42b9d0;
   margin-right: 10px;
+  font-weight: bold;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-left table,
@@ -360,7 +375,7 @@ body {
 .company-main-wrapper .news-main-wrapper-container .company-main-wrapper-container-right,
 .company-main-wrapper .company-main-wrapper-container .news-main-wrapper-container-right,
 .company-main-wrapper .company-main-wrapper-container .company-main-wrapper-container-right {
-  width: 18%;
+  width: 23%;
   margin-left: 50px;
 }
 
