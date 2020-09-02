@@ -3,12 +3,19 @@ body {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
 }
 
-#header {
-  background-color: #e9f3f5;
-  padding: 16px 0 19px 0;
+.container {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  list-style: none;
 }
 
-#header .header {
+#header {
+  background-color: #e9f3f5;
+  padding: 16px 0 19.5px 0;
+}
+
+#header #header-in {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,11 +26,11 @@ body {
           justify-content: space-between;
 }
 
-#header .header .header-icon {
+#header #header-in .header-icon {
   width: 48%;
 }
 
-#header .header .header-nav {
+#header #header-in .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,13 +39,13 @@ body {
   width: 48%;
 }
 
-#header .header .header-nav li {
+#header #header-in .header-nav li {
   list-style: none;
-  margin-top: 5px;
+  margin-top: 4px;
   height: 40px;
 }
 
-#header .header .header-nav li a {
+#header #header-in .header-nav li a {
   text-decoration: none;
   font-size: 14px;
   color: #626262;
@@ -46,48 +53,45 @@ body {
   font-weight: bold;
 }
 
-#header .header .header-nav li a img {
+#header #header-in .header-nav li a img {
   vertical-align: middle;
   padding-right: 10px;
   margin-bottom: 3px;
 }
 
-#header .header .header-nav li a:hover {
+#header #header-in .header-nav li a:hover {
   color: #42b9d0;
-}
-
-.container {
-  max-width: 960px;
-  position: relative;
-  margin: 0 auto;
 }
 
 .top-image {
   background-image: url(images/top/cover.jpg);
   background-size: cover;
-  height: 420px;
-  width: 100%;
+  text-align: center;
+  padding: 80px 0;
+}
+
+@media (min-width: 550px) {
+  .top-image {
+    text-align: left;
+    height: 420px;
+    padding: 0;
+  }
 }
 
 .top-image-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
   max-width: 960px;
+  margin: 0 auto;
 }
 
 .top-image-text img {
-  margin: 180px 331px 0 0;
+  margin-top: 180px;
+  margin-left: 70px;
 }
 
 .top-wrapper {
   background-color: #ffff;
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 0 0 0;
 }
 
 .top-wrapper ul {
@@ -110,47 +114,55 @@ body {
 }
 
 .top-wrapper ul li img {
-  height: 190px;
+  height: 186px;
   max-width: 100%;
 }
 
 .top-wrapper ul li h5 {
   font-size: 16px;
-  margin: 18px 0;
+  margin: 16px 0 22.5px 0;
   color: #626262;
+  letter-spacing: -1px;
 }
 
 .top-wrapper ul li p {
   font-size: 13px;
   color: #626262;
   line-height: 20px;
+  margin-bottom: 25px;
 }
 
 .news-wrapper {
-  height: 400px;
-  width: 100%;
   background-color: #e9f3f5;
 }
 
-.news-wrapper h3 {
+.news-wrapper .news-wrapper-list {
+  padding: 0 10% 50px 10%;
+}
+
+.news-wrapper .news-wrapper-list h3 {
   font-size: 22px;
   color: #42b9d0;
   text-align: center;
   padding: 53px 0 69px 0;
+  letter-spacing: 2px;
 }
 
-.news-wrapper ul {
+.news-wrapper .news-wrapper-list ul {
   margin-bottom: 30px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
 }
 
-.news-wrapper ul p {
+.news-wrapper .news-wrapper-list ul p {
   font-size: 14px;
   color: #000;
   text-align: center;
   padding-bottom: 30px;
 }
 
-.news-wrapper ul p span {
+.news-wrapper .news-wrapper-list ul p span {
   font-size: 14px;
   color: #42b9d0;
   margin-right: 10px;
@@ -166,17 +178,19 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  max-width: 960px;
 }
 
 #footer .footer-list-logo {
   width: 30.666667%;
 }
 
+#footer .footer-list-logo img {
+  max-width: 100%;
+}
+
 #footer .footer-list-address {
-  margin-left: 0;
+  margin-left: 4%;
   width: 30.6666667%;
 }
 
@@ -192,6 +206,7 @@ body {
   font-size: 11px;
   margin-right: 10px;
   width: 30.666667%;
+  margin-left: 4%;
 }
 
 #footer .footer-list a img {
@@ -279,6 +294,7 @@ body {
   border-bottom: 3px solid #42b9d0;
   font-weight: bold;
   line-height: 25px;
+  letter-spacing: -1px;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-left ul,
@@ -496,7 +512,7 @@ body {
   font-size: 15px;
   color: #339fd1;
   text-decoration: none;
-  line-height: 1.6px;
+  line-height: 1.6;
 }
 
 .news-main-wrapper .news-main-wrapper-container .news-main-wrapper-container-right .news-main-wrapper-container-right-contents ul li a img,

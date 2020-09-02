@@ -10,7 +10,7 @@
 </head>
 <body>
   <div id="header">
-    <div class="header container">
+    <div id="header-in" class="container">
       <div class="header-icon"><img src="images/top/logo.png" alt=""></div>
       <ul class="header-nav">
         <li><a href="index.html"><img src="images/top/navi_top.png" alt="TOPページ">TOPページ</li></a>
@@ -21,7 +21,9 @@
   </div>
   <div class="top-image">
     <div class="container">
-      <div class="top-image-text"><img src="images/top/cover_read.png" alt=""></div>
+      <div class="top-image-text">
+        <img src="images/top/cover_read.png" alt="">
+      </div>
     </div>
   </div>
   <div class="top-wrapper">
@@ -46,26 +48,74 @@
     </div>
   </div>
   <div class="news-wrapper">
-    <h3>NEWS</h3>
-    <ul>
-      <li>
-        <p><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</p>
-      </li>
-      <li>
-        <p><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</p>
-      </li>
-      <li>
-        <p><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</p>
-      </li>
-      <li>
-        <p><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</p>
-      </li>
-      <li>
-        <p><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</p>
-      </li>
-    </ul>
+    <div class="container">
+      <div class="news-wrapper-list">
+        <h3>NEWS</h3>
+        <ul>
+          <li>
+            <p><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</p>
+          </li>
+          <li>
+            <p><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</p>
+          </li>
+          <li>
+            <p><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</p>
+          </li>
+          <li>
+            <p><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</p>
+          </li>
+          <li>
+            <p><span>0000-00-00</span>ここにニューステキストが入ります。ここにニューステキストが入ります。</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div>googlemap</div>
+  <div id="googlemap">
+    <script src="//maps.googleapis.com/maps/api/js?key={AIzaSyBdyBD5UFpuedXnhcALcS_KhkwyqqzCfMk}&callback=initMap"></script>
+    <script type="text/javascript">
+      function googleMap() {
+        var latlng = new google.map.Latlng(35.669195, 139.717736);
+        var myOptions = {
+          zoom: 16,
+          center: latlng,
+          scrollwheel: false,
+          disableDoubleClickZoom: true,
+          draggable: false,
+          mapTypeConrolOptions: {
+            mapTypeIds: ['style', google.maps.MapTypeId.ROADMAP]
+          }
+        };
+        var map = new google.maps.Map(document.getElementById('map1'), myOptions);
+        var icon = new google.maps.MarkerImage('images/top/pin.png',
+          new google.maps.Size(48, 56),
+          new google.map.Point(0, 0));
+        var markerOptions = {
+          position: latlng,
+          map: map,
+          icon: icon,
+          title: '株式会社サンプル',
+          animation: google.maps.Animation.DROP
+        };
+        var marker = new google.maps.Marker(markerOptions);
+        var styleOptions = [{
+          "stylers": [{
+            "hue": '#eaf2f4'
+          }]
+        }];
+        var styledMapOptions = {
+          name: '株式会社サンプル'
+        }
+        var sampleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
+        map.mapTypes.set('style', sampleType);
+        map.setMapTypeId('style');
+      };
+      google.maps.event.addDomListener(window, 'load', function () {
+        googleMap();
+      });
+    </script>
+    <div id="map1" style="width:100%; height:400px; margin:0 auto;"></div>
+  </div>
   <div id="footer">
     <div class="container">
       <div class="footer-list">
@@ -82,9 +132,9 @@
           <a href="company.html"><img src="images/top/foot_arroehead.png" alt="">会社概要</a>
         </div>
       </div>
-      <div class="footer-copyright">
-        <p>copyright (C) SampleCompany all rights reserved.</p>
-      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>copyright (C) SampleCompany all rights reserved.</p>
     </div>
   </div>
 </body>
