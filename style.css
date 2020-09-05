@@ -4,10 +4,11 @@ body {
 }
 
 .container {
-  width: 80%;
   position: relative;
   margin: 0 auto;
   list-style: none;
+  max-width: 960px;
+  width: 80%;
 }
 
 #header {
@@ -30,6 +31,11 @@ body {
   width: 48%;
 }
 
+#header #header-in .hamburger,
+#header #header-in .globalMenuSp {
+  display: none;
+}
+
 #header #header-in .header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +43,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 48%;
+  margin-left: 4%;
 }
 
 #header #header-in .header-nav li {
@@ -66,16 +73,9 @@ body {
 .top-image {
   background-image: url(images/top/cover.jpg);
   background-size: cover;
-  text-align: center;
-  padding: 80px 0;
-}
-
-@media (min-width: 550px) {
-  .top-image {
-    text-align: left;
-    height: 420px;
-    padding: 0;
-  }
+  text-align: left;
+  height: 420px;
+  padding: 0;
 }
 
 .top-image-text {
@@ -114,7 +114,6 @@ body {
 }
 
 .top-wrapper ul li img {
-  height: 186px;
   max-width: 100%;
 }
 
@@ -178,7 +177,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 960px;
 }
 
 #footer .footer-list-logo {
@@ -200,26 +198,29 @@ body {
   line-height: 20px;
 }
 
-#footer .footer-list a {
+#footer .footer-list-nav {
+  width: 30.6666667%;
+  margin-left: 4%;
+  float: right;
+}
+
+#footer .footer-list-nav a {
   color: #ffff;
   text-decoration: none;
   font-size: 11px;
-  margin-right: 10px;
-  width: 30.666667%;
-  margin-left: 4%;
 }
 
-#footer .footer-list a img {
+#footer .footer-list-nav a img {
   vertical-align: middle;
   margin-right: 3px;
 }
 
-#footer .footer-copyright {
+.footer-copyright {
   text-align: center;
   padding: 30px 0 25px 0;
 }
 
-#footer .footer-copyright p {
+.footer-copyright p {
   font-size: 10px;
   color: #b2e1ea;
 }
