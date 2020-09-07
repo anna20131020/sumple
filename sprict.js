@@ -1,11 +1,15 @@
 $(function () {
   $('.hamburger').click(function () {
-    $(this).toggleClass('active');
+    var $answer = $(this).find('.globalMenuSp');
+    if ($answer.hasClass('open')) {
+      $answer.removeClass('open');
+      $answer.slideUp();
 
-    if ($(this).hasClass('active')) {
-      $('.globalMenuSp').addClass('active');
+
     } else {
-      $('.globalMenuSp').removeClass('active');
+      $answer.addClass('open');
+      $answer.slideDown();
+
     }
   });
 });
